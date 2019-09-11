@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Employee Details </title>
+	<script type="text/javascript" src="test.js"></script>
+	<style type="text/css">
+		#first_fieldset{
+			background: #ffffff;
+			border-color: #d8d8d8;
+			margin: auto;
+			margin-top: 50px;
+			width: 400px;
+			height: 300px;
+		}
+		input{
+			border-color: #c2c2c2;
+		}
+		#submit_button{
+			float: right;
+			background-color: #0080ff;
+			color: #ffffff;
+		}
+		#clear_button{
+			float: right;
+			background-color: #f2f2f2;
+			color: #3f4751;
+		}
+		header{
+			text-align: center;
+		}
+		label {
+			font-family: Arial;
+			color: #3f4751;
+			display: inline-block;
+			width: 120px;
+			text-align: left;
+			}​
+
+		</style>
+	</head>
+	<body style="background-color: #f2f2f2">		
+		<div>
+			<div>
+				<fieldset id="first_fieldset">
+					<header>Enter Employee Details</header><br>
+					<form name="form">
+						<label>Name : </label>
+						<input type="text" id="ename" ><br><br>
+						<label>Department : </label>
+						<input type="text" id="edepartment" ><br><br>
+						<label>Salary : </label>
+						<input type="Number" id="esalary" ><br><br>
+						<label>Phone Number : </label>
+						<input type="Number"  id="ephone" ><br><br>
+						<label  >Email : </label>
+						<input type="email" id="eemail" ><br><br>
+						<label >Date & Time : </label>
+						<input type="Date" id="edatetime" ><br><br>
+						<button id="clear_button" >Clear</button>
+						<button id="submit_button" onclick="newform()" >Submit</button>
+					</form>
+				</fieldset>
+			</div>
+		</div>
+	</body>
+	</html>  

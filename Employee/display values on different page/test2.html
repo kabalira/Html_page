@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Employee Details</title>
+
+	<style type="text/css">
+		#second_fieldset{
+			margin: auto;
+			margin-top: 50px;
+			width: 400px;
+			height: 470px;
+		}
+		#Home_button{
+			/*margin:auto;
+			display:block;*/
+			float: right;
+			background-color: #f2f2f2;
+			color: #3f4751;
+		}
+		header{
+			text-align: center;
+		}
+		label {
+			display: inline-block;
+			width: 110px;
+			text-align: left;
+			}​
+		</style>
+
+	</head>
+	<body>
+		<fieldset id="second_fieldset">
+			<form action="test.html">
+				<header>Employee Details</header><br>
+				<label>Name : </label>
+				<p id='name' style="color: #0000ff"></p>
+				<label>Department : </label>
+				<p id='department' style="color: #0000ff"></p>
+				<label>Salary : </label>
+				<p id='salary' style="color: #0000ff"></p>
+				<label>Phone Number : </label>
+				<p id='phone'></p>
+				<label>Email : </label>
+				<p id='email'></p>
+				<label>Date & Time : </label>
+				<p id='datetime'></p>
+				<script>
+					document.getElementById("name").innerHTML = sessionStorage.getItem("EmpName");
+					document.getElementById("department").innerHTML = sessionStorage.getItem("EmpDepartment");
+					document.getElementById("salary").innerHTML = sessionStorage.getItem("EmpSalary");
+					document.getElementById("phone").innerHTML = sessionStorage.getItem("EmpPhoneNumber");
+					document.getElementById("email").innerHTML = sessionStorage.getItem("EmpEmail");
+					document.getElementById("datetime").innerHTML = sessionStorage.getItem("EmpDateTime");
+				</script>
+				<button type="submit" id="Home_button"> Home Page </button>
+			</form>
+		</fieldset>
+	</body>
+
+	</html>

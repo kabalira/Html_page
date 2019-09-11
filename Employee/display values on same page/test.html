@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Employee Details </title>
+	<script type="text/javascript" src="test.js"></script>
+
+	<style type="text/css">
+		#first_fieldset{
+			margin: auto;
+			margin-top: 50px;
+			width: 400px;
+			height: 300px;
+		}
+		#second_fieldset{
+			margin: auto;
+			margin-top: 50px;
+			width: 400px;
+			height: 350px;
+		}
+		header{
+			text-align: center;
+		}
+		label {
+			display: inline-block;
+			width: 110px;
+			text-align: left;
+			}​
+			#submit_button{
+				margin-right: 100px;
+			}
+			button{
+				margin:auto;
+				display:block;
+			}
+
+		</style>
+	</head>
+	<body>		
+		<div>
+			<div>
+				<fieldset id="first_fieldset">
+					<header>Enter Employee Details</header><br>
+					<form name="form">
+						<label>Name : </label>
+						<input type="text" id="ename" ><br><br>
+						<label>Department : </label>
+						<input type="text" id="edepartment" ><br><br>
+						<label>Salary : </label>
+						<input type="Number" id="esalary" ><br><br>
+						<label>Phone Number : </label>
+						<input type="Number"  id="ephone" ><br><br>
+						<label>Email : </label>
+						<!-- <input type="Email" id="eemail" required=""><br><br> -->
+						<input type="text" id="eemail" ><br><br>
+
+						<label>Date & Time : </label>
+						<input type="datetime-local" id="edatetime" ><br><br>
+
+					</form>
+					<button id="submit_button" onclick="newform()" >Submit</button>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset id="second_fieldset">
+					<header>Employee Details</header><br>
+					Name : <p id='name' ></p>
+					Department : <p><span id='department'></span></p>
+					<label>Salary : </label>
+					<p><span id='salary'></span></p>
+					<label>Phone Number : </label>
+					<p><span id='phone'></span></p>
+					<label>Email : </label>
+					<p><span id='email'></span></p>
+				</fieldset>
+			</div>
+		</div>
+	</body>
+	</html>  
