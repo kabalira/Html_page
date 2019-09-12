@@ -1,0 +1,31 @@
+#fieldset{
+	background: #ffffff;
+	border-color: #d8d8d8;
+	margin: auto;
+	margin-top: 50px;
+	width: 330px;
+	height: 300px;
+}
+header{
+	text-align: center;
+}
+input{
+	border-color: #c2c2c2;
+}
+#clear_button,#Home_button{
+	float: right;
+	background-color: #f2f2f2;
+	color: #3f4751;
+}
+label#id_email{
+	font-style:italic
+}
+label {
+	font-family: Arial;
+	color: #3f4751;
+	display: inline-block;
+	width: 130px;
+	text-align: left;
+	}​
+
+
