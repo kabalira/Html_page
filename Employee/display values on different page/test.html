@@ -3,53 +3,34 @@
 <head>
 	<title> Employee Details </title>
 	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
-	
 	rel = "stylesheet">
 	<link rel="stylesheet" type="text/css" href="test.css">
 	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="test.js"></script>
 	<style type="text/css">
-		.required {
-			color: red;
-		}
-		#submit_button{
-			margin-right: 3px;
-			float: right;
-			background-color: #0080ff;
-			color: #ffffff;
-		}
+
 	</style>
 </head>
-<body style="background-color: #f2f2f2">
-	<div>
-		<div>
-			<fieldset id="fieldset">
-				<header>Enter Employee Details</header><br>
-				<form name="form">
-					<div class="control">
-						<label>Name<span class="required">*</span> :</label>
-						<input type="text" id="ename" ><br><br>
-					</div>
-					<div class="control">
-						<label>Department<span class="required">*</span> :</label>
-						<input type="text" id="edepartment" ><br><br>
-					</div>
-					<div class="control">
-						<label>Salary<span class="required">*</span> :</label>
-						<input type="Number" id="esalary" ><br><br>
-					</div>
-					<label>Phone Number : </label>
-					<input type="Number"  id="ephone" ><br><br>
-					<label id="id_email"> Email : </label>
-					<input type="text" id="eemail" ><br><br>
-					<label >Date & Time : </label>
-					<input type="text" id="datepicker" ><br><br>
-					<button id="clear_button" >Clear</button>
-				</form>
-				<button id="submit_button" >Submit</button>
-			</fieldset>
-		</div>
-	</div>
+<body>
+	<fieldset id="fieldset">
+		<header>Enter Employee Details</header><br>
+		<form name="form">
+			<label>Name<span class="required">*</span> :</label>
+			<input type="text" id="ename" ><br><br>
+			<label>Department<span class="required">*</span> :</label>
+			<input type="text" id="edepartment" ><br><br>
+			<label>Salary<span class="required">*</span> :</label>
+			<input type="Number" id="esalary" ><br><br>
+			<label>Phone Number : </label>
+			<input type="Number"  id="ephone" ><br><br>
+			<label id="id_email"> Email : </label>
+			<input type="text" id="eemail" ><br><br>
+			<label >Date & Time : </label>
+			<input type="text" id="datepicker" ><br><br>
+			<button id="clear_button" >Clear</button>
+		</form>
+		<button id="submit_button" >Submit</button>
+	</fieldset>
 </body>
 </html>  

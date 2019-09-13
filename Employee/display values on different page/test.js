@@ -1,53 +1,12 @@
-
 $(document).ready(function(){
-	$("input#edepartment").click(function(){
+	$("#ephone").click(function(){
 		if($("#ename").val() == ""){
 			alert("Name must be filled out");
 		}
 	});
-	$("input#esalary").click(function(){
-		if($("#ename").val() == ""){
-			alert("Name must be filled out");
-		}else if($("#edepartment").val() == ""){
-			alert("Department must be filled out");
-		}
+	$("#datepicker").click(function(){
+		$( "#datepicker" ).datepicker();
 	});
-	$("input#ephone").click(function(){
-		if($("#ename").val() == ""){
-			alert("Name must be filled out");
-		}else if($("#edepartment").val() == ""){
-			alert("Department must be filled out");
-		}else if($("#esalary").val() == ""){
-			alert("Salary must be filled out");
-		}
-	});
-	$("input#eemail").click(function(){
-		if($("#ename").val() == ""){
-			alert("Name must be filled out");
-		}else if($("#edepartment").val() == ""){
-			alert("Department must be filled out");
-		}else if($("#esalary").val() == ""){
-			alert("Salary must be filled out");
-		}
-	});
-	$("input#datepicker").click(function(){
-		if($("#ename").val() == ""){
-			alert("Name must be filled out");
-		}else if($("#edepartment").val() == ""){
-			alert("Department must be filled out");
-		}else if($("#esalary").val() == ""){
-			alert("Salary must be filled out");
-		}else {
-			$( "#datepicker" ).datepicker();
-		}
-	});
-});
-
-// $(function() {
-// 	$( "#datepicker" ).datepicker();
-// });
-
-$(document).ready(function(){
 	$("#submit_button").click(function() { 
 		if($("#ename").val() == ""){
 			alert("Name must be filled out");
@@ -84,3 +43,4 @@ $(document).ready(function(){
 		}
 	});
 });
+// https://www.smashingmagazine.com/2019/07/margins-in-css/
