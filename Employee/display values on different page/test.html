@@ -13,24 +13,24 @@
 	</style>
 </head>
 <body>
-	<fieldset id="fieldset">
-		<header>Enter Employee Details</header><br>
-		<form name="form">
-			<label>Name<span class="required">*</span> :</label>
-			<input type="text" id="ename" ><br><br>
-			<label>Department<span class="required">*</span> :</label>
-			<input type="text" id="edepartment" ><br><br>
-			<label>Salary<span class="required">*</span> :</label>
-			<input type="Number" id="esalary" ><br><br>
-			<label>Phone Number : </label>
-			<input type="Number"  id="ephone" ><br><br>
-			<label id="id_email"> Email : </label>
-			<input type="text" id="eemail" ><br><br>
-			<label >Date & Time : </label>
-			<input type="text" id="datepicker" ><br><br>
-			<button id="clear_button" >Clear</button>
+	<div class="fieldset">
+		<header>Enter Employee Details</header>
+		<form action="test2.html">
+			<label class="display">Name<span class="required">*</span> :</label>
+			<input autocomplete="off" type="text" id="ename" >
+			<label class="display">Department<span class="required">*</span> :</label>
+			<input autocomplete="off" type="text" id="edepartment" >
+			<label class="display">Salary<span class="required">*</span> :</label>
+			<input autocomplete="off" type="Number" id="esalary" >
+			<label class="display">Phone Number : </label>
+			<input autocomplete="off" type="Number"  id="ephone" >
+			<label class="display" id="id_email"> Email : </label>
+			<input autocomplete="off" type="text" id="eemail" >
+			<label class="display">Date & Time : </label>
+			<input autocomplete="off" type="text" id="datepicker" >
+			<button type="reset" id="clear_button" >Clear</button>
+			<button type="Submit" id="submit_button" >Submit</button>
 		</form>
-		<button id="submit_button" >Submit</button>
-	</fieldset>
+	</div>
 </body>
 </html>  

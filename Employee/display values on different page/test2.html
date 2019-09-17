@@ -7,31 +7,31 @@
 	</style>
 </head>
 <body>
-	<fieldset id="fieldset">
+	<div class="fieldset">
 		<form action="test.html">
-			<header>Employee Details</header><br>
-			<label>Name : </label>
-			<span id='name'></ 	span><br><br>
-			<label>Department : </label>
-			<span id='department'></span><br><br>
-			<label>Salary : </label>
-			<span id='salary' ></span><br><br>
-			<label>Phone Number : </label>
-			<span id='phone'></span><br><br>
-			<label id="id_email">Email : </label>
-			<span id='email'></span><br><br>
-			<label>Date : </label>
-			<span id='datepicker'></span><br>
-			<script>
-				document.getElementById("name").innerHTML = sessionStorage.getItem("EmpName");
-				document.getElementById("department").innerHTML = sessionStorage.getItem("EmpDepartment");
-				document.getElementById("salary").innerHTML = sessionStorage.getItem("EmpSalary");
-				document.getElementById("phone").innerHTML = sessionStorage.getItem("EmpPhoneNumber");
-				document.getElementById("email").innerHTML = sessionStorage.getItem("EmpEmail");
-				document.getElementById("datepicker").innerHTML = sessionStorage.getItem("EmpDateTime");
-			</script>
+			<header>Employee Details</header>
+			<label class="display">Name : </label>
+			<span class="display" id='name'></span>
+			<label class="display">Department : </label>
+			<span class="display" id='department'></span>
+			<label class="display">Salary : </label>
+			<span class="display" id='salary' ></span>
+			<label class="display">Phone Number : </label>
+			<span class="display" id='phone'></span>
+			<label class="display" id="id_email">Email : </label>
+			<span class="display" id='email'></span>
+			<label class="display">Date : </label>
+			<span class="display" id='datepicker'></span>
 			<button type="submit" id="Home_button"> Home </button>
 		</form>
-	</fieldset>
+		<script>
+			document.getElementById("name").innerHTML = sessionStorage.getItem("EmpName");
+			document.getElementById("department").innerHTML = sessionStorage.getItem("EmpDepartment");
+			document.getElementById("salary").innerHTML = sessionStorage.getItem("EmpSalary");
+			document.getElementById("phone").innerHTML = sessionStorage.getItem("EmpPhoneNumber");
+			document.getElementById("email").innerHTML = sessionStorage.getItem("EmpEmail");
+			document.getElementById("datepicker").innerHTML = sessionStorage.getItem("EmpDateTime");
+		</script>
+	</div>
 </body>
 </html>

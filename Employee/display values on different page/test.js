@@ -5,26 +5,33 @@ $(document).ready(function(){
 		}
 	});
 	$("#datepicker").click(function(){
-		$( "#datepicker" ).datepicker();
+		$( "#datepicker" ).datepicker({ 
+			numberOfMonths:2});
 	});
 	$("#submit_button").click(function() { 
 		if($("#ename").val() == ""){
 			alert("Name must be filled out");
+			return false;
 		}
 		else if($("#edepartment").val() == ""){
-			alert("Name must be filled out");
+			alert("department must be filled out");
+			return false;
 		}
 		else if($("#esalary").val() == ""){
-			alert("Name must be filled out");
+			alert("salary must be filled out");
+			return false;
 		}
 		else if($("#ephone").val() == ""){
-			alert("Name must be filled out");
+			alert("phone number must be filled out");
+			return false;
 		}
 		else if($("#eemail").val() == ""){
-			alert("Name must be filled out");
+			alert("Name email be filled out");
+			return false;
 		}
 		else if($("#datepicker").val() == ""){
-			alert("Name must be filled out");
+			alert("date must be filled out");
+			return false;
 		}
 		else {
 			var name = $("#ename").val();
@@ -39,7 +46,7 @@ $(document).ready(function(){
 			sessionStorage.setItem("EmpEmail",email);
 			var datetime = $("#datepicker").val();
 			sessionStorage.setItem("EmpDateTime",datetime);
-			window.open('test2.html');
+			// window.open('test2.html');
 		}
 	});
 });
