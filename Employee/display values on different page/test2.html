@@ -3,34 +3,63 @@
 <head>	
 	<title>Employee Details</title>
 	<link rel="stylesheet" type="text/css" href="test.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+	rel = "stylesheet">
+	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="test.js"></script>
 	<style type="text/css">
+		label{
+			width: 100px;
+		}
+		span{
+			word-break: break-all;
+			width: 100px;
+		}
+		.border{
+			border: 1px solid #c2c2c2;
+			margin: 8px;
+			padding: 3px;
+		}
 	</style>
 </head>
 <body>
 	<div class="fieldset">
 		<form action="test.html">
 			<header>Employee Details</header>
-			<label class="display">Name : </label>
-			<span class="display" id='name'></span>
-			<label class="display">Department : </label>
-			<span class="display" id='department'></span>
-			<label class="display">Salary : </label>
-			<span class="display" id='salary' ></span>
-			<label class="display">Phone Number : </label>
-			<span class="display" id='phone'></span>
-			<label class="display" id="id_email">Email : </label>
-			<span class="display" id='email'></span>
-			<label class="display">Date : </label>
-			<span class="display" id='datepicker'></span>
+			<div class="border">
+				<label class="display">Name : </label>
+				<span class="display" id='name'></span>
+			</div>
+			<div class="border">
+				<label class="display">Department : </label>
+				<span class="display" id='department'></span>
+			</div>
+			<div class="border">
+				<label class="display">Salary : </label>
+				<span class="display" id='salary' ></span>
+			</div>
+			<div class="border">
+				<label class="display" id="phonenumber_label">Phone No : </label>
+				<span class="display" id='phone'></span>
+			</div>
+			<div class="border">
+				<label class="display" id="id_email">Email : </label>
+				<span class="display" id='email'></span>
+			</div>
+			<div class="border">
+				<label class="display">Date : </label>
+				<span class="display" id='datepicker'></span>
+			</div>
 			<button type="submit" id="Home_button"> Home </button>
 		</form>
 		<script>
-			document.getElementById("name").innerHTML = sessionStorage.getItem("EmpName");
-			document.getElementById("department").innerHTML = sessionStorage.getItem("EmpDepartment");
-			document.getElementById("salary").innerHTML = sessionStorage.getItem("EmpSalary");
-			document.getElementById("phone").innerHTML = sessionStorage.getItem("EmpPhoneNumber");
-			document.getElementById("email").innerHTML = sessionStorage.getItem("EmpEmail");
-			document.getElementById("datepicker").innerHTML = sessionStorage.getItem("EmpDateTime");
+			$('#name').text(sessionStorage.getItem("EmpName"));
+			$('#department').text(sessionStorage.getItem("EmpDepartment"));
+			$('#salary').text(sessionStorage.getItem("EmpSalary"));
+			$('#phone').text(sessionStorage.getItem("EmpPhoneNumber"));
+			$('#email').text(sessionStorage.getItem("EmpEmail"));
+			$('#datepicker').text(sessionStorage.getItem("EmpDateTime"));
 		</script>
 	</div>
 </body>

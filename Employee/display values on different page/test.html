@@ -9,28 +9,27 @@
 	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="test.js"></script>
 	<style type="text/css">
-
 	</style>
 </head>
 <body>
 	<div class="fieldset">
 		<header>Enter Employee Details</header>
 		<form action="test2.html">
-			<label class="display">Name<span class="required">*</span> :</label>
-			<input autocomplete="off" type="text" id="ename" >
+			<label class="display" >Name<span class="required">*</span> :</label>
+			<input type="text" id="ename" maxlength="20">
 			<label class="display">Department<span class="required">*</span> :</label>
-			<input autocomplete="off" type="text" id="edepartment" >
+			<input type="text" id="edepartment" maxlength="20">
 			<label class="display">Salary<span class="required">*</span> :</label>
-			<input autocomplete="off" type="Number" id="esalary" >
-			<label class="display">Phone Number : </label>
-			<input autocomplete="off" type="Number"  id="ephone" >
-			<label class="display" id="id_email"> Email : </label>
-			<input autocomplete="off" type="text" id="eemail" >
-			<label class="display">Date & Time : </label>
-			<input autocomplete="off" type="text" id="datepicker" >
-			<button type="reset" id="clear_button" >Clear</button>
-			<button type="Submit" id="submit_button" >Submit</button>
+			<input type="Number" class="arrow_appearance" id="esalary" maxlength="20">
+			<label class="display" id="phonenumber_label">Phone No : </label>
+			<input type="Number" class="arrow_appearance" id="ephone" maxlength="20">
+			<label class="display" id="id_email">Email : </label>
+			<input type="text" id="eemail" maxlength="20">
+			<label class="display">Date : </label>
+			<input type="text" id="datepicker">
+			<button type="button" id="clear_button">Clear</button>
+			<button type="Submit" id="submit_button">Submit</button>
 		</form>
 	</div>
 </body>
-</html>  
+</html>

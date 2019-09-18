@@ -1,4 +1,12 @@
 $(document).ready(function(){
+	$("form").attr('autocomplete', 'off');
+
+	// var name = $("#phonenumber_label").text();
+	// if (name.length > 9) {
+	// 	var shortname = name.substring(0, 9) + ".... :";
+	// 	$('#phonenumber_label').replaceWith(shortname);
+	// }
+
 	$("#ephone").click(function(){
 		if($("#ename").val() == ""){
 			alert("Name must be filled out");
@@ -49,5 +57,8 @@ $(document).ready(function(){
 			// window.open('test2.html');
 		}
 	});
+	$("#clear_button").click(function(){
+        $("form").trigger("reset");
+    });
 });
 // https://www.smashingmagazine.com/2019/07/margins-in-css/
