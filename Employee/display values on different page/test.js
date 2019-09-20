@@ -1,44 +1,71 @@
 $(document).ready(function(){
 	$("form").attr('autocomplete', 'off');
+	$(".alert_box").hide();
+
+	$("#datepicker").hover(function(){
+		if($("#eemail").val() == ""){
+			$(".alert_box").show();
+			$(".nothing").text("Email must be filled out");
+			return false;
+		}}, function(){
+			// $(".alert_box").hide();
+		});
+
+	$("#eemail").hover(function(){
+		$(this).css({"background-color": "yellow"});
+	}, function(){
+		$(this).css("background-color", "white");
+	});
 
 	// var name = $("#phonenumber_label").text();
 	// if (name.length > 9) {
 	// 	var shortname = name.substring(0, 9) + ".... :";
 	// 	$('#phonenumber_label').replaceWith(shortname);
+	// 	function(){
+	// 	$(this).css("background-color", "white");
+	// }
 	// }
 
 	$("#ephone").click(function(){
 		if($("#ename").val() == ""){
-			alert("Name must be filled out");
+			$(".alert_box").show();
+			$(".nothing").text("Name must be filled out");
 		}
 	});
-	$("#datepicker").click(function(){
+	$("#datepicker").click(function(){ 	
 		$( "#datepicker" ).datepicker({ 
 			numberOfMonths:2});
 	});
 	$("#submit_button").click(function() { 
 		if($("#ename").val() == ""){
-			alert("Name must be filled out");
+			$(".alert_box").show();
+			$(".nothing").text("Name must be filled out");
 			return false;
 		}
+			
 		else if($("#edepartment").val() == ""){
-			alert("department must be filled out");
+			$(".alert_box").show();
+			$(".nothing").text("Department must be filled out");
 			return false;
 		}
 		else if($("#esalary").val() == ""){
-			alert("salary must be filled out");
+			$(".alert_box").show();
+			$(".nothing").text("Salary must be filled out");
 			return false;
 		}
 		else if($("#ephone").val() == ""){
-			alert("phone number must be filled out");
+			$(".alert_box").show();
+			$(".nothing").text("Phone number must be filled out");
 			return false;
 		}
 		else if($("#eemail").val() == ""){
-			alert("Name email be filled out");
+			$(".alert_box").show();
+			$(".nothing").text("Email must be filled out");
 			return false;
 		}
 		else if($("#datepicker").val() == ""){
-			alert("date must be filled out");
+			$(".alert_box").show();
+			$(".nothing").text("Date must be filled out");
 			return false;
 		}
 		else {
@@ -54,11 +81,11 @@ $(document).ready(function(){
 			sessionStorage.setItem("EmpEmail",email);
 			var datetime = $("#datepicker").val();
 			sessionStorage.setItem("EmpDateTime",datetime);
-			// window.open('test2.html');
+			window.open('test2.html');
 		}
 	});
 	$("#clear_button").click(function(){
-        $("form").trigger("reset");
-    });
+		$("form").trigger("reset");
+	});
 });
 // https://www.smashingmagazine.com/2019/07/margins-in-css/
