@@ -68,9 +68,13 @@ $(document).ready(function(){
 			$(".nothing").text("Date must be filled out");
 			return false;
 		}
-		else {
-			var name = $("#ename").val();
-			sessionStorage.setItem("EmpName",name);
+		else {		
+				var name = $("#ename").val();
+				$.post("test2.html",function(data){
+					$('#name').text(data);
+				});
+			// var name = $("#ename").val();
+			// sessionStorage.setItem("EmpName",name);
 			var department = $("#edepartment").val();
 			sessionStorage.setItem("EmpDepartment",department);
 			var salary = $("#esalary").val();
@@ -81,7 +85,7 @@ $(document).ready(function(){
 			sessionStorage.setItem("EmpEmail",email);
 			var datetime = $("#datepicker").val();
 			sessionStorage.setItem("EmpDateTime",datetime);
-			window.open('test2.html');
+			// window.open('test2.html');
 		}
 	});
 	$("#clear_button").click(function(){
