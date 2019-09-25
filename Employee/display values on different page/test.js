@@ -42,7 +42,7 @@ $(document).ready(function(){
 			$(".nothing").text("Name must be filled out");
 			return false;
 		}
-			
+
 		else if($("#edepartment").val() == ""){
 			$(".alert_box").show();
 			$(".nothing").text("Department must be filled out");
@@ -69,26 +69,31 @@ $(document).ready(function(){
 			return false;
 		}
 		else {		
-				var name = $("#ename").val();
-				$.post("test2.html",function(data){
-					$('#name').text(data);
-				});
 			// var name = $("#ename").val();
-			// sessionStorage.setItem("EmpName",name);
-			var department = $("#edepartment").val();
-			sessionStorage.setItem("EmpDepartment",department);
-			var salary = $("#esalary").val();
-			sessionStorage.setItem("EmpSalary",salary);
-			var phone = $("#ephone").val();
-			sessionStorage.setItem("EmpPhoneNumber",phone);
-			var email = $("#eemail").val();
-			sessionStorage.setItem("EmpEmail",email);
-			var datetime = $("#datepicker").val();
-			sessionStorage.setItem("EmpDateTime",datetime);
+			// $(document).load("test2.html",function(){
+			// 	var ename = $("#name").html(name);
+			// 	alert(ename);
+
+			// });
+				// $.post("test2.html",function(data){
+					// $('#name').text(data);
+					var name = $("#ename").val();
+					sessionStorage.setItem("EmpName",name);
+					var department = $("#edepartment").val();
+					sessionStorage.setItem("EmpDepartment",department);
+					var salary = $("#esalary").val();
+					sessionStorage.setItem("EmpSalary",salary);
+					var phone = $("#ephone").val();
+					sessionStorage.setItem("EmpPhoneNumber",phone);
+					var email = $("#eemail").val();
+					sessionStorage.setItem("EmpEmail",email);
+					var datetime = $("#datepicker").val();
+					sessionStorage.setItem("EmpDateTime",datetime);
 			// window.open('test2.html');
 		}
 	});
 	$("#clear_button").click(function(){
+		$(".alert_box").hide();
 		$("form").trigger("reset");
 	});
 });

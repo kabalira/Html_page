@@ -31,8 +31,8 @@ input{
 }
 .arrow_appearance::-webkit-inner-spin-button, 
 .arrow_appearance::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  /*margin: 0; */
+	-webkit-appearance: none; 
+	/*margin: 0; */
 }
 #submit_button{
 	margin-right: 3px;
